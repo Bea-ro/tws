@@ -1,4 +1,4 @@
-import { CardText, CardTextAndDetails } from '../models/cardTexts..model';
+import { CardText, CardTextAndDetails } from '../models/cardTexts.models';
 
 export const reasonsCards: CardText[][] = [
   [

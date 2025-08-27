@@ -1,0 +1,40 @@
+:host {
+  background-color: var(--color-orange);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pains-section {
+  color: var(--color-white);
+  display: flex;
+  padding-left: 10%;
+  padding-bottom: 0;
+}
+
+.pains-text-and-button {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 52px;
+}
+
+.pains-image {
+  width: 30%;
+}
+
+@media screen and (max-width: 766px) {
+  .pains-image {
+    display: none;
+  }
+
+  .pains-section {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .pains-text-and-button {
+    width: 90%;
+    align-items: center;
+  }
+}

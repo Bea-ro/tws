@@ -1,6 +1,6 @@
-import { Faqs } from '../models/faqs.model';
+import { FaqsModel } from '../models/faqs.models';
 
-export const faqs: Faqs[] = [
+export const faqs: FaqsModel[] = [
   {
     question: '¿En cuánto tiempo tendré mi web?',
     answear: 'Entre dos y cuatro semanas dependiendo del tipo de web y la cantidad de contenido.'

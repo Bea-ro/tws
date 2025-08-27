@@ -1,0 +1,16 @@
+<div [ngClass]="['card-container', cardClass]">
+  <p [ngClass]="cardClass === 'price-card' ? 'price-card-text' : 'reason-card-text'">
+    @for(text of cardText; track i; let i = $index) {
+    <span [ngClass]="text.type">{{ text.text }}</span>
+    }
+  </p>
+  @if(cardContent) {
+  <ul class="details-list">
+    @for(detail of cardDetails; track i; let i = $index) {
+    <li class="detail-listed">
+      <p>{{ detail }}</p>
+    </li>
+    }
+  </ul>
+  }
+</div>

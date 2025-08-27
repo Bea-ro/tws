@@ -1,0 +1,9 @@
+<section class="faqs-section">
+  <h3 class="section-intro">¿Tienes más dudas?</h3>
+  @for(faq of faqs; track i; let i = $index) {
+  <div>
+    <p class="question">{{ faq.question }}</p>
+    <p>{{ faq.answear }}</p>
+  </div>
+  }
+</section>

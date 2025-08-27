@@ -1,0 +1,24 @@
+.donate-section {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.section-intro {
+  font-size: 24px;
+  padding-bottom: 18px;
+}
+
+.info-button {
+  color: var(--color-purple);
+}
+
+.additional-info {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 766px) {
+  .donate-section {
+    width: 90%;
+  }
+}

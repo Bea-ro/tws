@@ -1,0 +1,77 @@
+.card0 {
+  background: url('/assets/pexels-rdne-4920855.jpg');
+}
+
+.card1 {
+  background: url('/assets/pexels-george-milton-6953835.jpg');
+}
+
+.card2 {
+  background: url('/assets/ong-transparencia.jpg');
+}
+
+.price-card {
+  box-shadow: inset 0 0 8px #eb5b004a;
+  color: var(--color-black);
+}
+
+.price-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-container {
+  border-radius: 32px;
+  min-height: 400px;
+  padding: 30px 16px;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+.card0::before,
+.card1::before,
+.card2::before {
+  border-radius: 32px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.mid-text {
+  font-size: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+.small-text {
+  position: relative;
+  z-index: 1;
+}
+
+.reason-card-text {
+  color: var(--color-white);
+}
+
+.price-card-text {
+  color: var(--color-black);
+  gap: 20px;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.detail-listed {
+  list-style-image: url('/assets/check-solid.svg');
+  padding-left: 1rem;
+}

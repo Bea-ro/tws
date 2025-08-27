@@ -1,0 +1,25 @@
+<h3 class="section-intro">{{ infoIntro }}</h3>
+<p class="section-answear" id="section-answear-info-component">{{ infoAnswear }}</p>
+<ul class="cards">
+  @for (cardContent of cardsContent; track cardContent; let idx = $index) {
+  <li>
+    <app-card
+      [cardClass]="content === 'reasons' ? 'card' + idx.toString() : 'price-card'"
+      [cardContent]="cardContent"
+    ></app-card>
+  </li>
+  }
+</ul>
+
+<div class="buttons-container">
+  <app-button
+    [buttonStyle]="'coloured-button'"
+    [buttonText]="'Solicitar web'"
+    [buttonLink]="'mailto:contacto@tuwebsolidaria.com'"
+  ></app-button>
+  <app-button
+    [buttonStyle]="'white-button'"
+    [buttonText]="'Descargar precios'"
+    [buttonLink]="'assets/tws-tu-web-solidaria-precios.pdf'"
+  ></app-button>
+</div>
